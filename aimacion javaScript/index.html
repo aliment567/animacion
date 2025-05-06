@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Animación con Web Animations API</title>
+  <link rel="stylesheet" href="Css/estilos.css">
+</head>
+<body>
+  <div id="cuadro"></div>
+
+  <script>
+    const cuadro = document.getElementById('cuadro');
+
+    cuadro.animate([
+      { transform: 'translateX(0px)', backgroundColor: '#3498db' },
+      { transform: 'translateX(300px)', backgroundColor: '#e74c3c' }
+    ], {
+      duration: 2000,
+      iterations: Infinity,
+      direction: 'alternate',
+      easing: 'ease-in-out'
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+
+
