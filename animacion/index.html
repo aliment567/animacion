@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Animación de Escala y Rotación</title>
+  <link rel="stylesheet" href="Css/estilos.css">
+</head>
+<body>
+<h1>animacion creado con Web Animations API</h1>
+<div id="circulo"></div>
+
+<script>
+  const circulo = document.getElementById('circulo');
+
+  circulo.animate(
+    [
+      { transform: 'scale(1) rotate(0deg)' },
+      { transform: 'scale(1.5) rotate(180deg)' },
+      { transform: 'scale(1) rotate(360deg)' }
+    ],
+    {
+      duration: 3000,
+      iterations: Infinity,
+      easing: 'ease-in-out'
+    }
+  );
+</script>
+
+</body>
+</html>
